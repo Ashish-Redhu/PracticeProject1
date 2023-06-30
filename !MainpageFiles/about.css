@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    font-family: 'Baloo 2', cursive;
+}
+/* The below is the way given to add a proper background behind some text. */
+/* Start */
+#heading::before{
+    background-image: url("../mediafiles/aboutimg1.jpg");
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+
+}
+#heading{
+    background-color: black;
+    color: white;
+    height: 50vh;
+    width: 100%;
+}
+#heading>*{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 15px;  
+}
+/* end */
+#heading>h1{
+    font-size: 50px;
+}
+#heading>h2>span{
+    padding-left: 10px;
+    font-size: larger;
+    text-decoration: overline;
+}
+#heading>p{
+    margin: auto 25vw;
+}
+
+
+/* ---------------------------------------------------------------------------------------------- */
+/* History */
+#content{
+    margin: 10px 50px;
+    padding-bottom: 15px;
+}
+#content>h3{
+    font-size: 1.3em;
+    text-decoration: underline;
+    padding-bottom: 15px;
+    font-weight: bolder;
+}
+/* ---------------------------------------------------------------------------------------------- */
+/* Address */
+#address{
+   margin: 10px 50px; 
+}
+#address>h3{
+    font-size: 1.3em;
+}
+#address>span{
+    color: red;
+}
+#address>#p1{
+    margin-top: 15px;
+}
+/* ---------------------------------------------------------------------------------------------- */
+footer{
+    font-size: 50px;
+}

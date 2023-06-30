@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    position: relative; 
+    top: 5vh;
+    font-family: 'Baloo 2', cursive;
+    font-weight: bolder;
+}
+ul{
+    display: flex;
+    list-style: none;
+    font-size: larger;
+}
+li{
+    padding-left: 8vw;
+}
+.navbar>#headsearchbar{
+    position: absolute;
+    right: 3vw;
+}
+#searchbar{
+    width: 4vw;
+    font-size:medium;
+    float: left;
+    padding: .25rem;
+    background: #f1f1f1;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    transition-delay: 0.5s;   
+}
+form#headsearchbar button{
+    height: 30px;
+    width: 30px;
+    padding: 0.15rem;
+    border-left: none;
+    cursor: pointer;
+    background: #2196F3;
+  color: white; 
+}
+:hover#searchbar{
+    width: 18vw;
+}
+
+form#headsearchbar button:hover{
+    background: #0b7dda;
+    border-radius: 5px;
+}
+form#headsearchbar :hover{
+    border-radius: 15px;
+}
+
+.upper::before{
+    /* background-image: url(https://images.pexels.com/photos/265216/pexels-photo-265216.jpeg?auto=compress&cs=tinysrgb&w=600); */
+    background-image: url("./mediafiles/IMG_20221122_093826_264.jpg");
+    content: '';
+    position: absolute;
+    top: 0px; 
+    left: 0px; 
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.6;
+}
+.upper>h2,.navbar{
+    position: relative;
+}
+.upper{
+    background-color: black;
+    color: white;
+    height: 100vh;
+    width: 100%;
+}
+.upper>h2{
+    position: absolute;
+    top: 40vh;
+    left: 45vw; 
+    font-weight: bolder;
+    font-size:4rem;
+}
+
+li>a{
+    text-decoration: none;
+    color: white;
+}
+li>a:hover, li:hover{
+    color: rgb(30, 255, 0);
+}
+
